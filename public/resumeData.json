@@ -1,0 +1,136 @@
+{
+  "main": {
+    "name":"Leonor Pereira",
+    "brandname":"Bem Me Quero",
+    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "image":"profilepic.jpg",
+    "bio":"Olá! O meu nome é Leonor e tenho 21 anos. Sou natural de Aveiro, Portugal, e estudante de Psicologia. Gosto de dizer que tenho duas grandes paixões: a Psicologia e os animais. Adoro ser proativa e investir no meu conhecimento. Esta sou eu. Agora que já me conheces, vem conhecer o meu trabalho! 😊",
+    "contactHeader":"Quero encomendar, como funciona?",
+    "contactmessage":"Queres fazer uma encomenda ou pedir um orçamento? É super simples!\n1) escolhe o tipo artigo que queres\n  • Bordado em bastidor (20cm - 20 🌼; varia consoante o tamanho e os elementos do bordado)\n  • Bordado em tela de pintura (varia consoante o tamanho)\n  • Totebag (13 🌼)\n• T-shirt (13 🌼)\n  • Personalização de artigos pessoais\n\n2) Descreve-me a tua ideia! (da forma mais pormenorizada que conseguires)\n\n3) Faz upload de imagens referência",
+    "email": "bemmequero.bordados@gmail.com",
+    "phone": "+351 91481146",
+    "insta": "@bemmequero_bordados",
+    "website": "http://www.timbakerdev.com",
+    "resumedownload":"http://timbakerdev.com",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/profile.php?id=100002053938427",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"instagram",
+        "url":"https://www.instagram.com/bemmequero_bordados/",
+        "className":"fa fa-instagram"
+      }
+      
+    ]
+  },
+  "resume":{
+    
+    "education":[
+      {
+        
+        "description":"O projeto \"Bem Me Quero\" surgiu durante o confinamento de 2020. Comecei por realizar um curso de bordados por mera curiosidade e rapidamente esta atividade tornou-se numa forma de descontrair, ganhando mais peso na minha vida, sobretudo na fase complicada que estávamos a passar. Recentemente, decidi começar a partilhar os meus trabalhos e a aceitar encomendas de bordados aqui no site e na minha página de Instagram @bemmequero_bordados."
+      }
+    ],
+    "work":[
+      {
+        "company":"Awesome Design Studio",
+        "title":"Senior UX God ",
+        "years":"March 2018 - Present",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company":"Super Cool Studio",
+        "title":"Junior bug fixer",
+        "years":"March 2017 - February 2018",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"60%"
+      },
+      {
+        "name":"VueJs",
+        "level":"55%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"50%"
+      },
+      {
+        "name":"CSS",
+        "level":"90%"
+      },
+      {
+        "name":"PHP",
+        "level":"80%"
+      },
+      {
+        "name":"Swift",
+        "level":"50%"
+      },
+      {
+        "name":"JAVA",
+        "level":"80%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"",
+        "image":"01.jpg"
+      },
+      {
+        "title":"",
+        "image":"02.jpg"
+      },
+      {
+        "title":"",
+        "image":"03.jpg"
+      },
+      {
+        "title":"",
+        "image":"04.jpg"
+      },
+      {
+        "title":"",
+        "image":"05.jpg"
+      },
+      {
+        "title":"", 
+        "image":"06.jpg"
+      },
+      {
+        "title":"",
+        
+        "image":"07.jpg"
+        
+      },
+      {
+        "title":"",
+        "image":"08.jpg"
+      },
+      {
+        "title":"",
+        "image":"09.jpg"
+      },
+      {
+        "title":"",
+        "image":"10.jpg"
+      },
+      {
+        "title":"",
+        "image":"11.jpg"
+      },
+      {
+        "title":"",
+        "image":"12.jpg"
+      }
+    ]
+  }
+}
