@@ -1,17 +1,10 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
-import Zmage from "react-zmage";
+//import Zmage from "react-zmage";
 
-let id = 0;
+//let id = 0;
 class Resume extends Component {
-  getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
+ 
   
   
 
@@ -28,7 +21,7 @@ class Resume extends Component {
       );
     });
 
-    const work = this.props.data.work.map(function (work) {
+    this.props.data.work.map(function (work) {
       return (
         <div key={work.company}>
           <h3>{work.company}</h3>
@@ -43,7 +36,7 @@ class Resume extends Component {
 
 
     return (
-      <section id="resume">
+      <section id="projeto">
         <Slide left duration={1300}>
           <div className="row education">
             <div className="three columns header-col">

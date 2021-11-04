@@ -11,7 +11,7 @@ class Header extends Component {
     if (!this.props.data) return null;
 
     
-    const name = this.props.data.brandname;
+    //const name = this.props.data.brandname;
     // const description = this.props.data.description;
     
     return (
@@ -25,7 +25,7 @@ class Header extends Component {
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
-          <a className="mobile-btn" href="#home" title="Hide navigation">
+          <a className="mobile-btn" href="#current" title="Hide navigation">
             Hide navigation
           </a>
 
@@ -37,13 +37,13 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#resume">
+              <a className="smoothscroll" href="#projeto">
                 O Projeto
               </a>
             </li>
 
             <li>
-              <a className="smoothscroll" href="#about">
+              <a className="smoothscroll" href="#sobre">
                 Quem Sou?
               </a>
             </li>
@@ -55,7 +55,7 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#contact">
+              <a className="smoothscroll" href="#contactos">
                 Contactos
               </a>
             </li>
@@ -66,7 +66,7 @@ class Header extends Component {
           <div className="banner-text">
            
             <Fade bottom> 
-            <img className="responsive-headline" src="images/logo.jpg"></img>
+            <img className="responsive-headline" alt="Bem Me Quero" src="images/logo.jpg"></img>
              
             </Fade>
             <Fade bottom duration={1200}>
@@ -80,7 +80,7 @@ class Header extends Component {
         </div>
 
         <p className="scrolldown">
-          <a className="smoothscroll" href="#resume">
+          <a className="smoothscroll" href="#projeto">
             <i className="icon-down-circle"></i>
           </a>
         </p>

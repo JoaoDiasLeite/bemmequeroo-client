@@ -16,7 +16,7 @@ class About extends Component {
   
 
     return (
-      <section id="about">
+      <section id="sobre">
         <Fade duration={1000}>
           <div className="row">
             <div className="three columns">

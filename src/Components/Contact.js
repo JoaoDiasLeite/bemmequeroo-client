@@ -10,7 +10,7 @@ class Contact extends Component {
       contactEmail: "",
       contactSubject: "",
       contactMessage: "",
-      contactFile: "", 
+      contactFile: null, 
       picturePreview: ""
     };
     
@@ -26,7 +26,7 @@ class Contact extends Component {
       [e.target.name]: e.target.value
     });
   };
-    uploadPicture = (e) => {
+    fileSelectedHandler = (e) => {
     this.setState({
         /* contains the preview, if you want to show the picture to the user
            you can access it with this.state.currentPicture
@@ -45,7 +45,7 @@ class Contact extends Component {
     const formData = new FormData();
     formData.append(
         "file",
-        this.state.pictureAsFile
+        this.state.contactFile, this.state.contactFile.name
     );
     console.log(this.state)
     const {contactName, contactEmail, contactSubject, contactMessage, contactFile, picturePreview} = this.state;
@@ -83,11 +83,11 @@ class Contact extends Component {
 
     const email = this.props.data.email;
     const phone = this.props.data.phone;
-    const message = this.props.data.contactmessage;
+    
     const header = this.props.data.contactHeader;
 
     return (
-      <section id="contact">
+      <section id="contactos">
         <Fade bottom duration={1000}>
           <div className="row section-head">
             
@@ -177,7 +177,7 @@ Queres fazer uma encomenda ou pedir um orçamento? É super simples!<br/><br/>
                       size="35"
                       id="contactFile"
                       name="contactFile"
-                      onChange={this.uploadPicture}
+                      onChange={this.fileSelectedHandler}
                     />
                     <img alt="" class="preview-encomenda" src={this.state.picturePreview}/>
                   </div>

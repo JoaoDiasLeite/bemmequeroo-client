@@ -8,12 +8,12 @@
    TOC:
    a. General Styles
    b. Header Styles
-   c. About Section
-   d. Resume Section
+   c. Sobre Section
+   d. Projeto Section
    e. Portfolio Section
    f. Call To Action Section
    g. Testimonials Section
-   h. Contact Section
+   h. Contactos Section
    i. Footer
 
 ===================================================================== */
@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background:rgba(204, 185, 100, 0.61) }
+body { background:#c7a673 }
 /* color bg -  #0f0f0f  */
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -124,7 +124,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #694b0b; }
+header .scrolldown a:hover { color: #804000; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -150,7 +150,7 @@ header .scrolldown a:hover { color: #694b0b; }
    left: 0;
    top: 0;
 }
-.opaque {background-color: rgba(204, 185, 100, 0.61)}
+.opaque {background-color: #c7a673}
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -190,113 +190,113 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #694b0b; }
+ul#nav li.current a { color: #804000; }
 
 
 /* ------------------------------------------------------------------ */
-/* c. About Section
+/* c. Sobre Section
 /* ------------------------------------------------------------------ */
 
-#about {
+#sobre {
    
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #694b0b; }
+#sobre a, #sobre a:visited  { color: #fff; }
+#sobre a:hover, #sobre a:focus { color: #804000; }
 
-#about h2 {
+#sobre h2 {
    font: 30px 'garamond';
    font-weight: bold;
-   color: #694b0b;
+   color: #804000;
    margin-bottom: 12px;
 }
-#about p {
+#sobre p {
    line-height: 30px;
    color: #fff;
    font: 22px 'garamond';
 }
-#about .profile-pic {
+#sobre .profile-pic {
    position: relative;
    width: 120px;
    height: 120px;
    border-radius: 100%;
 }
-#about .contact-details { width: 41.66667%; }
-#about .download {
+#sobre .contact-details { width: 41.66667%; }
+#sobre .download {
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
-#about .download .button {
+#sobre .main-col { padding-right: 5%; }
+#sobre .download .button {
    margin-top: 6px;
    background: #444;
 }
-#about .download .button:hover {
+#sobre .download .button:hover {
    background: #fff;
    color: #2B2B2B;
 }
-#about .download .button i {
+#sobre .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
 
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. projeto Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#projeto {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #694b0b; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#projeto a, #projeto a:visited  { color: #804000; }
+#projeto a:hover, #projeto a:focus { color: #313131; }
 
-#resume h1 {
-   color:#694b0b;
+#projeto h1 {
+   color:#804000;
    font: 25px 'garamond';
    font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
-   border-bottom: 3px solid #694b0b;
+#projeto h1 span {
+   border-bottom: 3px solid #804000;
    padding-bottom: 6px;
 }
-#resume h3 {
+#projeto h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#projeto .header-col { padding-top: 9px; }
+#projeto .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+#projeto .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
 
-#resume p {
+#projeto p {
    font: 22px 'garamond';
-   color: #694b0b;
+   color: #804000;
 }
-#resume .info span {
+#projeto .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#projeto .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
@@ -319,7 +319,7 @@ ul#nav li.current a { color: #694b0b; }
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #694b0b;
+   color: #804000;
    ;
 }
 
@@ -688,10 +688,10 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------ */
-/* h. Contact Section
+/* h. Contactos Section
 /* ------------------------------------------------------------------ */
 
-#contact {
+#contactos {
    
    padding-top: 96px;
    padding-bottom: 102px;
@@ -700,20 +700,20 @@ call-to-action .button {
 }
 
 
-#contact .section-head { margin-bottom: 42px; }
+#contactos .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #694B0B; }
-#contact a:hover, #contact a:focus { color: #fff; }
+#contactos a, #contactos a:visited  { color: #804000; }
+#contactos a:hover, #contactos a:focus { color: #fff; }
 
-#contact h1 {
+#contactos h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #694B0B;
+   color: #804000;
    margin-bottom: 6px;
 }
-#contact h1 span { display: none; }
-#contact h1:before {
+#contactos h1 span { display: none; }
+#contactos h1:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
 	padding-right: 10px;
@@ -723,52 +723,52 @@ call-to-action .button {
    float: left;
    color: #ebeeee;
 }
-#contact h2 {
+#contactos h2 {
    font: 20px/24px 'garamond';
    font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #694B0B;
+   color: #804000;
    margin-bottom: 6px;
 }
 
-#contact h4 {
+#contactos h4 {
    font: 25px/24px 'garamond';
    font-weight: bold;
-   color: #694B0B;
+   color: #804000;
    margin-bottom: 6px;
 }
-#contact p.lead {
+#contactos p.lead {
    font: 22px/24px 'garamond';
    padding-right: 3%;
 }
-#contact .header-col { padding-top: 6px; }
+#contactos .header-col { padding-top: 6px; }
 
 
-/* contact form */
-#contact form { margin-bottom: 30px; }
-#contact label {
+/* contactos form */
+#contactos form { margin-bottom: 30px; }
+#contactos label {
    font: 20px/24px 'garamond';
    font-weight: bold;
    margin: 12px 0;
-   color: #694B0B;
+   color: #804000;
 	display: inline-block;
 	float: left;
    width: 26%;
 }
-#contact p {
+#contactos p {
    font: 20px/24px 'garamond';
   
   
 }
-#contact .preview-encomenda {
+#contactos .preview-encomenda {
    padding: 10px 26%;
    margin-bottom: 42px;
    line-height: 24px;
  
 }
 @media only screen and (max-width: 767px) {
-   #contact .preview-encomenda {
+   #contactos .preview-encomenda {
       padding: 0px;
       margin-top: 10px;
       margin-bottom: 42px;
@@ -777,9 +777,9 @@ call-to-action .button {
    }
 }
 
-#contact input,
-#contact textarea,
-#contact select {
+#contactos input,
+#contactos textarea,
+#contactos select {
    padding: 10px 20px;
 	color: #000;
 	background: #fff;
@@ -790,19 +790,19 @@ call-to-action .button {
    line-height: 24px;
    width: 65%;
 }
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
+#contactos input:focus,
+#contactos textarea:focus,
+#contactos select:focus {
 	color: #fff;
-	background-color: #694B0B;
+	background-color: #804000;
 }
-#contact button.submit {
+#contactos button.submit {
 	text-transform: uppercase;
    font: 20px 'garamond';
    font-weight: bold;
 	letter-spacing: 3px;
 	color:#fff;
-   background: #694B0B;
+   background: #804000;
 	border: none;
    cursor: pointer;
    height: auto;
@@ -810,17 +810,17 @@ call-to-action .button {
 	border-radius: 0px;
    margin-left: 26%;
 }
-#contact button.submit:hover {
-	color: #694B0B;
+#contactos button.submit:hover {
+	color: #804000;
 	background: #fff;
 }
-#contact span.required {
-	color: #694B0B;
+#contactos span.required {
+	color: #804000;
 	font-size: 13px;
 }
 #message-warning, #message-success {
    display: none;
-	background: #694B0B;
+	background: #804000;
 	padding: 24px 24px;
 	margin-bottom: 36px;
    width: 65%;
@@ -852,13 +852,13 @@ footer {
    background-color: #fff;
    padding-top: 48px;
    margin-bottom: 0px;
-   color: #694B0B;
+   color: #804000;
    font-size: 14px;
    text-align: center;
    position: relative;
 }
 
-footer a, footer a:visited { color: #694B0B; }
+footer a, footer a:visited { color: #804000; }
 footer a:hover, footer a:focus { color: #DFD4A0; }
 
 /* copyright */
@@ -879,7 +879,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #694B0B;
+    color: #804000;
 }
 footer .copyright  li:first-child:before {
     display: none;
@@ -914,7 +914,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #694B0B;
+	background-color: #804000;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
