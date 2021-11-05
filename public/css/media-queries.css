@@ -14,7 +14,7 @@
     /* header styles
    ------------------------------------------------------------------ */
    header .banner-text h1 {
-      font: 80px/1.1em 'garamond';
+      font: 80px/1.1em 'Montserrat';
       font-weight: bold;
       letter-spacing: -1px;
       margin: 0 auto 12px auto;
@@ -30,7 +30,7 @@
    ------------------------------------------------------------------ */
    header .banner { padding-bottom: 12px; }
    header .banner-text h1 {
-      font: 78px/1.1em 'garamond';
+      font: 78px/1.1em 'Montserrat';
       font-weight: bold;
       letter-spacing: -1px;      
    }
@@ -44,7 +44,7 @@
    }
    /* nav-wrap */
    #nav-wrap {
-      font: 15px 'garamond';
+      font: 15px 'Montserrat';
       font-weight: bold;
       letter-spacing: 1.5px;
    }
@@ -62,7 +62,7 @@
 
    /* Projeto Section
    ------------------------------------------------------------------- */
-   #projeto h1 { font: 25px/24px 'garamond';
+   #projeto h1 { font: 25px/20px 'Montserrat';
       font-weight: bold; }
    #projeto .main-col { padding-right: 5%; }   
 
@@ -209,7 +209,7 @@
       padding-bottom: 12px;
       padding-top: 6px;
    }
-   header .banner-text h1 { font: 68px/1.1em 'garamond';
+   header .banner-text h1 { font: 68px/1.1em 'Montserrat';
       font-weight: bold; }
    header .banner-text h3 {
       font: 16px/1.9em 'librebaskerville-regular', serif;
@@ -315,7 +315,7 @@
    #contact .header-col { padding-top: 0; }
    #contact .header-col h1:before { content: none;	}
    #contact .section-head p.lead { text-align: center;
-      font: 22px 'garamond';}
+      font: 22px 'Montserrat';}
 
    /* form */
    #contact label {
@@ -362,7 +362,7 @@
   -------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 480px) {
-
+   img {width:auto; height: auto;}
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap ul#nav { width: auto; float: none; }
@@ -371,7 +371,7 @@
    -------------------------------------------------------------------- */
    header .banner { padding-top: 24px; }
    header .banner-text h1 {
-      font: 40px/1.1em 'garamond';
+      font: 40px/1.1em 'Montserrat';
       font-weight: bold;     
       margin: 0 auto 24px auto;
    }

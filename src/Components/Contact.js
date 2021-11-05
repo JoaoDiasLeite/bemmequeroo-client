@@ -181,7 +181,7 @@ Queres fazer uma encomenda ou pedir um orçamento? É super simples!<br/><br/>
                     />
                     <img alt="" class="preview-encomenda" src={this.state.picturePreview}/>
                   </div>
-
+                  
                   <div>
                     <button className="submit" type="submit">Encomendar</button>
                     <span id="image-loader">
