@@ -363,6 +363,10 @@
 
 @media only screen and (max-width: 480px) {
    img {width:auto; height: auto;}
+   .react-reveal  {
+      width: fit-content;
+      height: fit-content;
+   }
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap ul#nav { width: auto; float: none; }

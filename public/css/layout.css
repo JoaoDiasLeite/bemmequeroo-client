@@ -768,7 +768,7 @@ call-to-action .button {
    line-height: 24px;
  
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 760px) {
    #contactos .preview-encomenda {
       padding: 0px;
       margin-top: 10px;
@@ -776,6 +776,7 @@ call-to-action .button {
       line-height: 24px;
     
    }
+   
 }
 
 #contactos input,
@@ -804,13 +805,15 @@ call-to-action .button {
    font-weight: bold;
 	letter-spacing: 3px;
 	color:#fff;
+   
+   
    background: #804000;
 	border: none;
    cursor: pointer;
    height: auto;
    display: inline-block;
 	border-radius: 0px;
-   margin-left: 26%;
+   
 }
 #contactos button.submit:hover {
 	color: #804000;

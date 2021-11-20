@@ -532,6 +532,7 @@ fieldset { margin-bottom: 24px; }
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="file"],
 textarea,
 select {
    display: block;
