@@ -10,8 +10,8 @@ class Contact extends Component {
       contactEmail: "",
       contactSubject: "",
       contactMessage: "",
-      contactFile: null, 
-      picturePreview: ""
+      contactFile: "", 
+      picturePreview: "",
     };
     
   }
@@ -19,57 +19,57 @@ class Contact extends Component {
 
 
   handleChange = (e) => {
-    console.log(e.target.name)
-    console.log(e.target.value)
-
-    this.setState({
+    // console.log(e.target.name)
+    // console.log(e.target.value)
+    if(e.target.name === "contactFile"){
+      this.setState({
+        [e.target.name]: e.target.files[0],
+        picturePreview : URL.createObjectURL(e.target.files[0])
+      });
+    }
+    else {this.setState({
       [e.target.name]: e.target.value
-    });
+      });
+    }
   };
-    fileSelectedHandler = (e) => {
-    this.setState({
-        /* contains the preview, if you want to show the picture to the user
-           you can access it with this.state.currentPicture
-       */
-        picturePreview : URL.createObjectURL(e.target.files[0]),
-        /* this contains the file we want to send */
-        contactFile : e.target.files[0]
-    })
-};
-
   
-  handleSubmit = (e) => {
-    e.preventDefault();
-    
-    
-    const formData = new FormData();
-    formData.append(
-        "file",
-        this.state.contactFile, this.state.contactFile.name
-    );
-    console.log(this.state)
-    const {contactName, contactEmail, contactSubject, contactMessage, contactFile, picturePreview} = this.state;
+  // fileSelectedHandler = (e) => {
+  //     const img = {
+  //       preview: URL.createObjectURL(e.target.files[0]),
+  //       data: e.target.files[0],
+  //     }
+  //     setImage(img)
+  //   }
 
-    const form = {
+
+  send(campos){
+    const formData = new FormData();
+    Object.keys(campos).forEach(key => formData.append(key, campos[key]));
+    axios.post('http://localhost:5000/sendData', 
+              formData,
+              {
+                headers: {
+                  "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
+                }
+              })
+      .then(alert('Pedido enviado' ), response => { console.log(response.data); })
+      .catch(err =>{
+        console.error(err);
+      });   
+  }
+  
+  handleSubmit = async(e) => {
+    e.preventDefault();
+
+    const {contactName, contactEmail, contactSubject, contactMessage, contactFile, picturePreview} = this.state;
+    const campos = {
       contactName, 
       contactEmail, 
       contactSubject, 
       contactMessage,
-      contactFile,
-      picturePreview
-      
-    };
-    
-  
-    
-      alert('Pedido enviado' );
-      axios.post('http://localhost:5000/sendData', form)
-      .then(() => console.log('Form submited'))
-      .catch(err =>{
-        console.error(err);
-      });   
-       
-  
+      contactFile
+    }; 
+    this.send(campos)
   };
     
 
@@ -177,7 +177,7 @@ Queres fazer uma encomenda ou pedir um orçamento? É super simples!<br/><br/>
                       size="35"
                       id="contactFile"
                       name="contactFile"
-                      onChange={this.fileSelectedHandler}
+                      onChange={this.handleChange}
                     />
                     <img alt="" class="preview-encomenda" src={this.state.picturePreview}/>
                   </div>
