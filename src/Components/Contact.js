@@ -52,7 +52,7 @@ class Contact extends Component {
                   "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
                   "Access-Control-Allow-Origin": "*",
                 }
-              })
+              },{withCredentials:true})
       .then(alert('Pedido enviado' ), response => { console.log(response.data); })
       .catch(err =>{
         console.error(err);
