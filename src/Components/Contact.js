@@ -81,6 +81,13 @@ class Contact extends Component {
       contactFile: "", 
       picturePreview: "",
     });
+    this.contactName.value= "";
+    this.contactEmail.value= "";
+    this.contactSubject.value= "";
+    this.contactMessage.value= "";
+    this.contactFile.value= "";
+    this.picturePreview.value= "";
+    
   };
     
 
