@@ -50,6 +50,7 @@ class Contact extends Component {
               {
                 headers: {
                   "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
+                  "Access-Control-Allow-Origin": "*",
                 }
               })
       .then(alert('Pedido enviado' ), response => { console.log(response.data); })
