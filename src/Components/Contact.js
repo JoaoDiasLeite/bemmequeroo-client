@@ -73,6 +73,14 @@ class Contact extends Component {
       contactFile
     }; 
     this.send(campos)
+    this.setState({ 
+      contactName: "",
+      contactEmail: "",
+      contactSubject: "",
+      contactMessage: "",
+      contactFile: "", 
+      picturePreview: "",
+    });
   };
     
 
