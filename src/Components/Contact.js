@@ -45,7 +45,7 @@ class Contact extends Component {
   send(campos){
     const formData = new FormData();
     Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-    axios.post('http://localhost:5000/sendData', 
+    axios.post('https://bemmequero-api.herokuapp.com/sendData', 
               formData,
               {
                 headers: {
