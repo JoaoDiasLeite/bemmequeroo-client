@@ -10,8 +10,8 @@
     "email": "bemmequero.bordados@gmail.com",
     "phone": "+351 91481146",
     "insta": "@bemmequero_bordados",
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "https://www.bemmequeroo.pt",
+    "resumedownload":"https://www.bemmequeroo.pt",
     "social":[
       {
         "name":"facebook",
@@ -32,50 +32,6 @@
       {
         
         "description":"O projeto \"Bem Me Quero\" surgiu durante o confinamento de 2020. Comecei por realizar um curso de bordados por mera curiosidade e rapidamente esta atividade tornou-se numa forma de descontrair, ganhando mais peso na minha vida, sobretudo na fase complicada que estávamos a passar. Recentemente, decidi começar a partilhar os meus trabalhos e a aceitar encomendas de bordados aqui no site e na minha página de Instagram @bemmequero_bordados."
-      }
-    ],
-    "work":[
-      {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      },
-      {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      }
-    ],
-    "skills":[
-      {
-        "name":"Python",
-        "level":"60%"
-      },
-      {
-        "name":"VueJs",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"PHP",
-        "level":"80%"
-      },
-      {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
       }
     ]
   },

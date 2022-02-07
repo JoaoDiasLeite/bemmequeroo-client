@@ -21,20 +21,6 @@ class Resume extends Component {
       );
     });
 
-    this.props.data.work.map(function (work) {
-      return (
-        <div key={work.company}>
-          <h3>{work.company}</h3>
-          <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-          </p>
-          <p>{work.description}</p>
-        </div>
-      );
-    });
-
-
     return (
       <section id="projeto">
         <Slide left duration={1300}>
@@ -53,26 +39,6 @@ class Resume extends Component {
             </div>
           </div>
         </Slide>
-
-       
-
-       {/*  <Slide left duration={1300}>
-          <div className="row skill">
-            <div className="three columns header-col">
-              <h1>
-                <span>Skills</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <p>{skillmessage}</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
-            </div>
-          </div>
-        </Slide> */}
       </section>
     );
   }

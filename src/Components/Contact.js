@@ -70,7 +70,8 @@ class Contact extends Component {
       contactEmail, 
       contactSubject, 
       contactMessage,
-      contactFile
+      contactFile,
+      picturePreview
     }; 
     this.send(campos)
     this.setState({ 
