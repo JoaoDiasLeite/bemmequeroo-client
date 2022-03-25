@@ -42,10 +42,10 @@ class Contact extends Component {
   //   }
 
 
-  send(campos){
+  async send(campos){
     const formData = new FormData();
     Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-    axios.post('https://bemmequero-api.herokuapp.com/sendData', 
+    await axios.post('https://bemmequero-api.herokuapp.com/sendData', 
               formData,
               {
                 headers: {
@@ -55,7 +55,7 @@ class Contact extends Component {
                   "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
                 }
               },{withCredentials:true})
-      .then(alert('Pedido enviado' ), response => { console.log(response.data); })
+      .then(alert('Pedido enviado com sucesso!' ), response => {console.log(response); })
       .catch(err =>{
         console.error(err);
       });   
@@ -82,12 +82,6 @@ class Contact extends Component {
       contactFile: "", 
       picturePreview: "",
     });
-    this.contactName.value= "";
-    this.contactEmail.value= "";
-    this.contactSubject.value= "";
-    this.contactMessage.value= "";
-    this.contactFile.value= "";
-    this.picturePreview.value= "";
     
   };
     
