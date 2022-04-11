@@ -1,11 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import './index.css';
 import App from './App';
+import Backoffice from "./routes/Backoffice.js";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <App />,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="admin" element={<Backoffice />} />
+      <Route
+      path="*"
+      element={
+        <main style={{ padding: "1rem" }}>
+          <p>There's nothing here!</p>
+        </main>
+      }
+    />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
